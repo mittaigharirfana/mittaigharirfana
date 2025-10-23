@@ -24,6 +24,13 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import About from "./pages/About";
 
+// Admin Pages
+import AdminLogin from "./pages/admin/AdminLogin";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminProducts from "./pages/admin/AdminProducts";
+import AdminOrders from "./pages/admin/AdminOrders";
+import AdminSettings from "./pages/admin/AdminSettings";
+
 function App() {
   return (
     <BrowserRouter>
