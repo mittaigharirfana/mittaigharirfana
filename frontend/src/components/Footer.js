@@ -14,14 +14,11 @@ const Footer = () => {
               Your one-stop destination for authentic homemade batters, pickles, and traditional spice powders.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+              <a href="https://www.facebook.com/share/16NuCNAu5Y/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+              <a href="https://www.instagram.com/freshwalam?igsh=MXd6cWVodXl2d2JtbA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
