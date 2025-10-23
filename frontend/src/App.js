@@ -30,6 +30,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminProducts from "./pages/admin/AdminProducts";
 import AdminOrders from "./pages/admin/AdminOrders";
 import AdminSettings from "./pages/admin/AdminSettings";
+import DownloadAndroid from "./pages/admin/DownloadAndroid";
 
 function App() {
   return (
