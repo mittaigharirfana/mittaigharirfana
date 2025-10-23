@@ -135,7 +135,7 @@ const AdminDashboard = () => {
         {/* Quick Actions */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Quick Actions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <Button
               onClick={() => navigate('/admin/products')}
               className="bg-orange-500 hover:bg-orange-600 py-6 text-lg"
@@ -153,6 +153,12 @@ const AdminDashboard = () => {
               className="bg-blue-500 hover:bg-blue-600 py-6 text-lg"
             >
               Settings
+            </Button>
+            <Button
+              onClick={() => navigate('/admin/download-android')}
+              className="bg-purple-500 hover:bg-purple-600 py-6 text-lg"
+            >
+              📱 Download Android App
             </Button>
           </div>
         </div>
