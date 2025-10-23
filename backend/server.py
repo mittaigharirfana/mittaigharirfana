@@ -12,7 +12,7 @@ import uuid
 
 from models import (
     OrderCreate, PaymentVerification, Order, OrderItem,
-    Product, Category
+    Product, Category, UserLogin
 )
 from database import (
     products_collection, orders_collection, categories_collection,
