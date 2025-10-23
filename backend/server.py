@@ -217,6 +217,64 @@ async def get_order(order_id: str):
         raise HTTPException(status_code=404, detail="Order not found")
     return order
 
+# Update order status (Admin)
+@api_router.put("/admin/orders/{order_id}/status")
+async def update_order_status(order_id: str, status: str):
+    result = await orders_collection.update_one(
+        {'orderId': order_id},
+        {'$set': {'status': status, 'updatedAt': datetime.utcnow()}}
+    )
+    if result.modified_count == 0:
+        raise HTTPException(status_code=404, detail="Order not found")
+    return {"success": True, "message": "Order status updated"}
+
+# Admin - Create product
+@api_router.post("/admin/products")
+async def create_product(product: Product):
+    product_dict = product.dict()
+    await products_collection.insert_one(product_dict)
+    return {"success": True, "message": "Product created", "product": product_dict}
+
+# Admin - Update product
+@api_router.put("/admin/products/{product_id}")
+async def update_product(product_id: str, product_data: dict):
+    product_data['id'] = product_id
+    result = await products_collection.update_one(
+        {'id': product_id},
+        {'$set': product_data}
+    )
+    if result.modified_count == 0:
+        raise HTTPException(status_code=404, detail="Product not found")
+    return {"success": True, "message": "Product updated"}
+
+# Admin - Delete product
+@api_router.delete("/admin/products/{product_id}")
+async def delete_product(product_id: str):
+    result = await products_collection.delete_one({'id': product_id})
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="Product not found")
+    return {"success": True, "message": "Product deleted"}
+
+# Admin - Get dashboard stats
+@api_router.get("/admin/stats")
+async def get_admin_stats():
+    total_products = await products_collection.count_documents({})
+    total_orders = await orders_collection.count_documents({})
+    pending_orders = await orders_collection.count_documents({'status': 'pending'})
+    processing_orders = await orders_collection.count_documents({'status': 'processing'})
+    
+    # Calculate total revenue
+    orders = await orders_collection.find({}).to_list(1000)
+    total_revenue = sum(order.get('totalAmount', 0) for order in orders)
+    
+    return {
+        "totalProducts": total_products,
+        "totalOrders": total_orders,
+        "pendingOrders": pending_orders,
+        "processingOrders": processing_orders,
+        "totalRevenue": total_revenue
+    }
+
 # Include the router in the main app
 app.include_router(api_router)
 
