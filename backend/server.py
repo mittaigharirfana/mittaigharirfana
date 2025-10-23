@@ -217,6 +217,16 @@ async def get_order(order_id: str):
         raise HTTPException(status_code=404, detail="Order not found")
     return order
 
+# Download Android project
+from fastapi.responses import FileResponse
+@api_router.get("/download-android")
+async def download_android():
+    return FileResponse(
+        path="/tmp/freshwala-android.tar.gz",
+        filename="freshwala-android.tar.gz",
+        media_type="application/gzip"
+    )
+
 # Update order status (Admin)
 @api_router.put("/admin/orders/{order_id}/status")
 async def update_order_status(order_id: str, status: str):
