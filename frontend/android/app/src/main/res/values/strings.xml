@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Freshwala</string>
+    <string name="title_activity_main">Freshwala</string>
+    <string name="package_name">com.freshwala.app</string>
+    <string name="custom_url_scheme">com.freshwala.app</string>
+</resources>
