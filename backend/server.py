@@ -65,6 +65,26 @@ async def shutdown_event():
 async def root():
     return {"message": "Freshwala API is running"}
 
+# Admin login
+@api_router.post("/admin/login")
+async def admin_login(credentials: UserLogin):
+    # Hardcoded admin credentials - in production, use hashed passwords
+    ADMIN_EMAIL = "mittaigharirfana786@gmail.com"
+    ADMIN_PASSWORD = "Cocosnoofi@2024"
+    
+    if credentials.email == ADMIN_EMAIL and credentials.password == ADMIN_PASSWORD:
+        return {
+            "success": True,
+            "user": {
+                "email": ADMIN_EMAIL,
+                "name": "Admin",
+                "role": "admin"
+            },
+            "token": "admin-token-" + str(uuid.uuid4())
+        }
+    else:
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+
 # Get all categories
 @api_router.get("/categories")
 async def get_categories():
