@@ -46,6 +46,7 @@ function App() {
                 <Route path="/admin/products" element={<AdminProducts />} />
                 <Route path="/admin/orders" element={<AdminOrders />} />
                 <Route path="/admin/settings" element={<AdminSettings />} />
+                <Route path="/admin/download-android" element={<DownloadAndroid />} />
                 
                 {/* Public Routes (with Header/Footer) */}
                 <Route path="/*" element={
