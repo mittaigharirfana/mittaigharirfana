@@ -1,20 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ShoppingCart, Heart, Minus, Plus, Truck, Shield, RefreshCw } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { useCart } from '../contexts/CartContext';
 import { useWishlist } from '../contexts/WishlistContext';
 import { toast } from '../hooks/use-toast';
-import { products } from '../data/mock';
 import ProductCard from '../components/ProductCard';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const product = products.find(p => p.id === id);
+  const [product, setProduct] = useState(null);
+  const [relatedProducts, setRelatedProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { addToCart } = useCart();
   const { isInWishlist, toggleWishlist } = useWishlist();
   const [quantity, setQuantity] = useState(1);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const response = await axios.get(`${API}/products/${id}`);
+        setProduct(response.data);
+        
+        // Fetch related products
+        const relatedRes = await axios.get(`${API}/products?category=${response.data.category}`);
+        const related = relatedRes.data.filter(p => p.id !== id).slice(0, 4);
+        setRelatedProducts(related);
+      } catch (error) {
+        console.error('Error fetching product:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProduct();
+  }, [id]);
 
   if (!product) {
     return (
