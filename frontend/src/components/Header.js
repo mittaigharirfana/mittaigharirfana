@@ -123,7 +123,7 @@ const Header = () => {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918978152777"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:block text-gray-600 hover:text-green-600 transition-colors"
