@@ -4,7 +4,7 @@ categories_data = [
     {
         'id': '1',
         'name': 'Podulu',
-        'image': 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzYxMjExNzM3fDA&ixlib=rb-4.1.0&q=85',
+        'image': 'https://images.unsplash.com/photo-1698557048177-a460bb415177',
         'description': 'Traditional spice powders'
     },
     {
@@ -16,25 +16,25 @@ categories_data = [
     {
         'id': '3',
         'name': 'Dairy Products',
-        'image': 'https://images.unsplash.com/photo-1581600140682-d4e68c8cde32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzYxMjExNzM3fDA&ixlib=rb-4.1.0&q=85',
+        'image': 'https://images.unsplash.com/photo-1635436338433-89747d0ca0ef',
         'description': 'Fresh Ghee & Paneer'
     },
     {
         'id': '4',
         'name': 'Papad',
-        'image': 'https://images.pexels.com/photos/9266190/pexels-photo-9266190.jpeg',
+        'image': 'https://images.pexels.com/photos/8818667/pexels-photo-8818667.jpeg',
         'description': 'Crispy homemade papads'
     },
     {
         'id': '5',
         'name': 'Pickles',
-        'image': 'https://images.unsplash.com/photo-1617854307432-13950e24ba07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBwaWNrbGVzfGVufDB8fHx8MTc2MTIxMTczMXww&ixlib=rb-4.1.0&q=85',
+        'image': 'https://images.unsplash.com/photo-1617854307432-13950e24ba07',
         'description': 'Spicy traditional pickles'
     },
     {
         'id': '6',
         'name': 'Batters',
-        'image': 'https://images.pexels.com/photos/14132112/pexels-photo-14132112.jpeg',
+        'image': 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc',
         'description': 'Fresh Idli & Dosa batter'
     }
 ]
