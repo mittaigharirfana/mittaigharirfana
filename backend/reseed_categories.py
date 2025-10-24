@@ -10,7 +10,7 @@ MONGO_URL = os.getenv("MONGO_URL")
 
 async def reseed_categories():
     client = AsyncIOMotorClient(MONGO_URL)
-    db = client.freshwala
+    db = client.freshwala_db
     
     print("🗑️  Clearing existing categories...")
     delete_result = await db.categories.delete_many({})
