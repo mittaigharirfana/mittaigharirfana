@@ -49,26 +49,18 @@ function App() {
                 <Route path="/admin/download-android" element={<DownloadAndroid />} />
                 
                 {/* Public Routes (with Header/Footer) */}
-                <Route path="/*" element={
-                  <>
-                    <Header />
-                    <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/shop" element={<Shop />} />
-                      <Route path="/product/:id" element={<ProductDetail />} />
-                      <Route path="/cart" element={<Cart />} />
-                      <Route path="/wishlist" element={<Wishlist />} />
-                      <Route path="/checkout" element={<Checkout />} />
-                      <Route path="/order-success/:orderId" element={<OrderSuccess />} />
-                      <Route path="/orders" element={<Orders />} />
-                      <Route path="/profile" element={<Profile />} />
-                      <Route path="/login" element={<Login />} />
-                      <Route path="/signup" element={<Signup />} />
-                      <Route path="/about" element={<About />} />
-                    </Routes>
-                    <Footer />
-                  </>
-                } />
+                <Route path="/" element={<><Header /><Home /><Footer /></>} />
+                <Route path="/shop" element={<><Header /><Shop /><Footer /></>} />
+                <Route path="/product/:id" element={<><Header /><ProductDetail /><Footer /></>} />
+                <Route path="/cart" element={<><Header /><Cart /><Footer /></>} />
+                <Route path="/wishlist" element={<><Header /><Wishlist /><Footer /></>} />
+                <Route path="/checkout" element={<><Header /><Checkout /><Footer /></>} />
+                <Route path="/order-success/:orderId" element={<><Header /><OrderSuccess /><Footer /></>} />
+                <Route path="/orders" element={<><Header /><Orders /><Footer /></>} />
+                <Route path="/profile" element={<><Header /><Profile /><Footer /></>} />
+                <Route path="/login" element={<><Header /><Login /><Footer /></>} />
+                <Route path="/signup" element={<><Header /><Signup /><Footer /></>} />
+                <Route path="/about" element={<><Header /><About /><Footer /></>} />
               </Routes>
               <Toaster />
             </div>
