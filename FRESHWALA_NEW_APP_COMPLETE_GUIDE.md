@@ -20,7 +20,7 @@ Starting completely fresh with:
 
 **Click this link to download:**
 ```
-https://grocery-express-19.preview.emergentagent.com/freshwala-NEW-APP-v1.0.tar.gz
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-NEW-APP-v1.0.tar.gz
 ```
 
 **Size:** 19 MB (larger because it includes web assets - this is normal!)
@@ -267,14 +267,14 @@ Download Freshwala now! 💚
 - Upload it
 
 ### **Feature Graphic:** (1024x500)
-- Download from: https://grocery-express-19.preview.emergentagent.com/freshwala_feature_graphic.png
+- Download from: https://grocery-app-deploy.preview.emergentagent.com/freshwala_feature_graphic.png
 - Upload it
 
 ### **Screenshots:**
 - Download from old app OR use these links:
-- https://grocery-express-19.preview.emergentagent.com/freshwala_home.jpeg
-- https://grocery-express-19.preview.emergentagent.com/freshwala_shop.jpeg
-- https://grocery-express-19.preview.emergentagent.com/freshwala_product_detail.jpeg
+- https://grocery-app-deploy.preview.emergentagent.com/freshwala_home.jpeg
+- https://grocery-app-deploy.preview.emergentagent.com/freshwala_shop.jpeg
+- https://grocery-app-deploy.preview.emergentagent.com/freshwala_product_detail.jpeg
 - Upload at least 2
 
 ### **App Category:**

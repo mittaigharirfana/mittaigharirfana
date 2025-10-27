@@ -16,7 +16,7 @@ By the end of this guide, you will have:
 
 ### 1.1 Click This Link:
 ```
-https://grocery-express-19.preview.emergentagent.com/freshwala-android.tar.gz
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-android.tar.gz
 ```
 
 ### 1.2 Save the File:
@@ -440,7 +440,7 @@ Initial release of Freshwala app
 ## Important Links:
 - Play Console: https://play.google.com/console
 - Android Studio: https://developer.android.com/studio
-- Your app project: https://grocery-express-19.preview.emergentagent.com/admin/download-android
+- Your app project: https://grocery-app-deploy.preview.emergentagent.com/admin/download-android
 
 ---
 

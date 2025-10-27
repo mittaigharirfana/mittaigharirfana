@@ -10,7 +10,7 @@ import sys
 from datetime import datetime
 
 # Backend URL from frontend .env
-BASE_URL = "https://grocery-express-19.preview.emergentagent.com/api"
+BASE_URL = "https://grocery-app-deploy.preview.emergentagent.com/api"
 
 class FreshwalaAPITester:
     def __init__(self):

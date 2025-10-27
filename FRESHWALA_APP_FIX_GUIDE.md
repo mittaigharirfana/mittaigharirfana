@@ -20,7 +20,7 @@
 
 **Click this link to download:**
 ```
-https://grocery-express-19.preview.emergentagent.com/freshwala-android-fixed.tar.gz
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-android-fixed.tar.gz
 ```
 
 **Size:** 4.5 MB

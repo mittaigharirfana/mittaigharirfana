@@ -17,7 +17,7 @@ The following pickle products have been reset to placeholder images, ready for y
 ### Step 1: Access Admin Panel
 
 **For Preview Environment (Testing):**
-- URL: `https://grocery-express-19.preview.emergentagent.com/admin/login`
+- URL: `https://grocery-app-deploy.preview.emergentagent.com/admin/login`
 
 **For Production Website (Live):**
 - URL: `https://freshwala.online/admin/login` 
@@ -107,7 +107,7 @@ The following pickle products have been reset to placeholder images, ready for y
 
 ### Preview Environment (Current)
 ✅ Admin panel is **fully functional**
-- URL: https://grocery-express-19.preview.emergentagent.com/admin/login
+- URL: https://grocery-app-deploy.preview.emergentagent.com/admin/login
 - You can test all features here
 
 ### Production Website (freshwala.online)

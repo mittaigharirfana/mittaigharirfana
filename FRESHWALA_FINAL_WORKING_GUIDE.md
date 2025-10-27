@@ -20,7 +20,7 @@
 
 **Click this link:**
 ```
-https://grocery-express-19.preview.emergentagent.com/freshwala-FINAL-WORKING.tar.gz
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-FINAL-WORKING.tar.gz
 ```
 
 **Size:** 19 MB  
@@ -170,8 +170,8 @@ Download Freshwala now! 💚
 
 **Images:**
 - App Icon (512x512): Upload your logo
-- Feature Graphic (1024x500): https://grocery-express-19.preview.emergentagent.com/freshwala_feature_graphic.png
-- Screenshots: https://grocery-express-19.preview.emergentagent.com/freshwala_home.jpeg
+- Feature Graphic (1024x500): https://grocery-app-deploy.preview.emergentagent.com/freshwala_feature_graphic.png
+- Screenshots: https://grocery-app-deploy.preview.emergentagent.com/freshwala_home.jpeg
 
 **Category:** Shopping  
 **Email:** tautanhospitality@gmail.com  

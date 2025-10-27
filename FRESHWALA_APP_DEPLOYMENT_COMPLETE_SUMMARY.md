@@ -21,7 +21,7 @@
 - Order management system in place
 
 **Admin Access:**
-- URL: `https://grocery-express-19.preview.emergentagent.com/admin/login`
+- URL: `https://grocery-app-deploy.preview.emergentagent.com/admin/login`
 - Email: `mittaigharirfana786@gmail.com`
 - Password: `Cocosnoofi@2024`
 
@@ -101,8 +101,8 @@
 
 **Download URLs:**
 ```
-https://grocery-express-19.preview.emergentagent.com/freshwala-android.tar.gz
-https://grocery-express-19.preview.emergentagent.com/freshwala-android-app.zip
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-android.tar.gz
+https://grocery-app-deploy.preview.emergentagent.com/freshwala-android-app.zip
 ```
 
 ### **App Bundle:**
@@ -113,7 +113,7 @@ https://grocery-express-19.preview.emergentagent.com/freshwala-android-app.zip
 - `freshwala-keystore.jks` (Keep safe! Backup to Google Drive/USB!)
 
 ### **Marketing Assets:**
-All available at: `https://grocery-express-19.preview.emergentagent.com/`
+All available at: `https://grocery-app-deploy.preview.emergentagent.com/`
 
 **Feature Graphic:**
 - `freshwala_feature_graphic.png` (1024x500px, 35KB)
@@ -167,7 +167,7 @@ All available at: `https://grocery-express-19.preview.emergentagent.com/`
 - **URL:** https://play.google.com/console
 
 ### **Admin Panel:**
-- **URL:** https://grocery-express-19.preview.emergentagent.com/admin/login
+- **URL:** https://grocery-app-deploy.preview.emergentagent.com/admin/login
 - **Email:** mittaigharirfana786@gmail.com
 - **Password:** Cocosnoofi@2024
 
