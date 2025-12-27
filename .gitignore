@@ -85,3 +85,4 @@ android-sdk/ -e
 # Environment files
 *.env
 *.env.*
+frontend/public/freshwala-READY-TO-SIGN-v1.1.tar.gz
