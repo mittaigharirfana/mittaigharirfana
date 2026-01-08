@@ -86,3 +86,4 @@ android-sdk/ -e
 *.env
 *.env.*
 frontend/public/freshwala-READY-TO-SIGN-v1.1.tar.gz
+frontend/public/freshwala-STANDALONE-v1.1.tar.gz
